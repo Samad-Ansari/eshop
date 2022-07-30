@@ -1,0 +1,37 @@
+header {
+	margin-bottom: 25px;
+}
+.logo img {
+	width: 160px;
+}
+
+.nav li{
+	list-style: none;
+	display: inline-block;
+	margin-right: 15px;
+}
+
+li a {
+	color: var(--surface-500);
+	cursor: pointer;
+}
+
+a:hover {
+	color:  #ff3a00;
+}
+
+.navigation {
+	padding-top: 25px;
+}
+
+.tools {
+	padding-top: 38px;
+}
+
+.tools .pi {
+	margin-right: 10px;
+}
+
+.search {
+	padding-top: 25px;
+}

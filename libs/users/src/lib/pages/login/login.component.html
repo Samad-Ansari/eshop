@@ -1,0 +1,42 @@
+<div class="login-register">
+	<div class="login-register-panel">
+		<div class="grid">
+			<div class="col-6">
+				<img style="width: 100%" src="assets/images/login-photo.png">
+			</div>
+			<div class="col-6 p-5">
+				<h3>Welcome !</h3>
+				<h2>Login Page</h2>
+				<form [formGroup]="loginFormGroup">
+					<div class="grid">
+						<div class="col-12 mt-6">
+							 <div class="p-inputgroup">
+					            <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+					            <input type="email" pInputText placeholder="Email" formControlName="email">         
+					        </div>
+					        <small *ngIf="loginForm.email.invalid && isSubmitted" class="p-error">
+					        	<span *ngIf="loginForm.email.errors.required">email is required</span>
+					        	<span *ngIf="loginForm.email.errors.email">email is invalid</span>
+					        </small>
+						</div>
+						<div class="col-12">
+							 <div class="p-inputgroup">
+					            <span class="p-inputgroup-addon"><i class="pi pi-lock"></i></span>
+					            <input type="password" pInputText placeholder="Password" formControlName="password">         
+					        </div>
+					        <small *ngIf="loginForm.password.invalid && isSubmitted" class="p-error">
+					        	Password is required
+					        </small>
+						</div>
+						<div class="col-12">
+							<p-button (onClick)="onSubmit()" label="Submit" styleClass="full-btn" ></p-button>
+						</div>
+						<div class="col-12" *ngIf="isSubmitted && authError">
+							<small class="p-error">{{ authMessage }}</small>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

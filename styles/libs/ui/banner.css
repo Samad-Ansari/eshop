@@ -1,0 +1,45 @@
+.banner {
+	height: 280px;
+	width: 100%;
+	background-color: #d7effb;
+	border-radius: 15px;
+}
+
+.banner-text {
+	color: var(--surface-700);
+	margin-top: 50px;
+	margin-left: 50px;
+}
+
+.banner-image {
+	padding: 15px 50px 0 0;
+	text-align: right;
+}
+
+h1 {
+	margin: 0;
+	font-size: 3em;
+	font-weight: 400;
+} 
+
+h2 {
+	margin: 0;
+	font-size: 2em;
+	font-weight: 300;
+}
+
+.banner-button {
+	background-color: var(--surface-0);
+	color: #ff3a00;
+	border: 0;
+	border-radius: 13px;
+	height: 50px;
+}
+/*.p-button:enabled:hover*/
+.banner-button:enabled:hover {
+	background-color: var(--surface-0);
+	color: #ff3a00;
+	border: 0;	
+	height: 50px;
+	border-radius: 13px;
+}

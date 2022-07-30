@@ -1,0 +1,41 @@
+@import '~normalize.css/normalize.css';
+@import './base/colors.css';
+@import './base/fonts.css';
+
+/*Libraries*/
+@import '~primeicons/primeicons.css';
+@import '~primeng/resources/themes/saga-blue/theme.css';
+@import '~primeng/resources/primeng.min.css';
+@import '~primeflex/primeflex.css';
+@import '~animate.css/animate.css';
+
+@import './base/configuration.css';
+/*Pages*/
+@import './apps/shop/pages/home-page.css';
+@import './apps/shop/pages/products-list-page.css';
+
+/*Shared*/
+@import './apps/shop/shared/header.css';
+@import './apps/shop/shared/footer.css';
+
+/*Libs*/
+@import './libs/ui/banner.css';
+@import './libs/ui/slider.css';
+@import './libs/ui/gallery.css';
+@import './libs/products/search.css';
+@import './libs/products/categories-banner.css';
+@import './libs/products/product-item.css';
+@import './libs/products/product-page.css';
+@import './libs/orders/cart.css';
+@import './libs/orders/checkout.css';
+@import './libs/orders/order-summary.css';
+
+
+.container {
+	width: 1200px;
+	padding: 15px;
+	margin: 0 auto;
+	background-color: var(--surface-100);
+}
+
+

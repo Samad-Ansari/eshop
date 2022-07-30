@@ -1,0 +1,12 @@
+:root {
+	--primary-color: #ff3a00;
+	--primary-color-dark: #af2900; 
+}
+
+.primary-color {
+	color: #ff3a00;
+}
+
+.primary-color-dark {
+	color: #af2900;
+}
